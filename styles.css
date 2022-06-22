@@ -1,0 +1,39 @@
+body{
+    display: grid;
+    grid-template-areas: "header header header"
+                        "body body body" 
+                        "footer footer footer";
+    grid-gap: 10px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid;
+    padding: 0% 2%;
+    grid-area: header; 
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    grid-area: body;
+    justify-self: center;
+    align-items: center;
+    border: solid 1px;
+    border-radius: 5%;
+    width: fit-content;
+    margin-top: 10%;
+    padding: 20px;
+    height: 60%;
+}
+#submit{
+    width: 50%;
+    border: solid 1px;
+    
+}
+input[type="text"]{
+    width: 80%;
+   
+}
