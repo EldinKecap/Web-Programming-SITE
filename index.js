@@ -1,40 +1,24 @@
-class Person{
-    constructor(ime,prezime){
-        this.ime=ime;
-        this.prezime=prezime;
+function getUserInput(){
+    let username = document.getElementById('username');
+    let password = document.getElementById('password');
+    let errorPassword = document.getElementById('errorPassword');
+    let errorUsername = document.getElementById('errorUsername');
+    if (/^[A-Za-z0-9_-]*$/.test(password.value)&&password.value.length >6) {
+        console.log(username.value);
+        console.log(password.value);
+        errorPassword.innerText = '';
+    }else{
+        errorPassword.innerText = 'Password must be longer than 6 characters and contain only letters, numbers, underscores and dashes';
+
+        console.log('password cant contain spaces');
     }
-}
-
-class Teacher extends Person{
-    constructor(ime,prezime,plata){
-        super(ime,prezime);
-        this.plata = plata;
+    if (/^[A-Za-z0-9_-]*$/.test(username.value)&&username.value.length >6) {
+        console.log(username.value);
+        console.log(username.value);
+        errorUsername.innerText = '';
+    }else{
+        errorUsername.innerText = 'Username must be longer than 6 characters and contain only letters, numbers, underscores and dashes';
+        console.log('username cant contain spaces');
     }
 
 }
-Person.prototype.smth=function () {
-    console.log(this.ime)
-}
-let teacher = new Teacher('Neki','team',1400);
-console.log(teacher)
-teacher.smth();
-function Osoba(ime,prezime){
-    this.ime = ime;
-    this.prezime = prezime;
-}
-function Student(ime,prezime,brIndexa){
-    Osoba.apply(this,[ime,prezime]);
-    this.brIndexa = brIndexa;
-}
-Osoba.prototype.displayPrez = function (){
-    console.log(this.prezime);
-};
-Student.prototype = Object.create(Osoba.prototype);
-
-let stud = new Student('Eldin','Kecap','1');
-console.log(stud);
-stud.displayPrez();
-Student.prototype.smt = function(){
-    console.log(this.brIndexa);
-};
-stud.smt();

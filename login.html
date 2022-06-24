@@ -13,13 +13,15 @@
         <a href="./index.html">Home</a>
         <a href="./login.html">Log in</a>
     </nav>
-    <form action="">
+    <form action="" onclick="getUserInput()" onsubmit="return false">
         <label for="username">Enter username:</label>
-            <input type="text" id="username" placeholder="Enter username">
-            <label for="password">Enter password:</label>
-            <input type="text" id="password" placeholder="Enter password">
+        <div id="errorUsername"></div>
+        <input type="text" id="username" placeholder="Enter username">
+        <label for="password">Enter password:</label>
+        <div id="errorPassword"></div>
+        <input type="text" id="password" placeholder="Enter password">
         <input id="submit" type="submit">
-        <a href="createAccount.html">Create new account</a>
+        <a href="createAccount.html" id="createNewAccount">Create new account</a>
     </form>
 </body>
 </html>
