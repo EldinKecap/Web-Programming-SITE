@@ -4,9 +4,11 @@ body{
                         "body body body" 
                         "footer footer footer";
     grid-gap: 10px;
-    background-image: url('https://outwardhound.com/furtropolis/wp-content/uploads/2020/03/Doggo-Lingo-Post.jpg') ;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-image: url(./Images/backgroundBodyImage.jpg) ;
 }
+
 nav{
     display: flex;
     align-items: center;
@@ -15,8 +17,11 @@ nav{
     border-radius: 10px;
     padding: 0% 2%;
     grid-area: header; 
+    background-image: url(./Images/backgroundBodyImage.jpg) ;
+
 }
 form{
+    color: rgb(66, 60, 60);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -30,8 +35,12 @@ form{
     margin-top: 10%;
     padding: 20px;
     height: fit-content;
-    box-shadow: inset 3px 3px 15px black;
+    box-shadow: inset 1px 1px 15px black;
+    max-width: 400px;
+    background-image: url(/Images/BackgroundFormImage.jpg);
+    background-position: 50% 0%;
 }
+   
 #submit{
     width: 50%;
     border: solid 1px;
@@ -43,15 +52,20 @@ input[type="text"]{
 }
 #createNewAccount{
     margin-top: 10px;
-    color: black;
+    color: rgb(66, 60, 60);
     text-decoration: none;
     font-family: monospace;
+    padding: 8px;
 }
 #createNewAccount:hover{
-    color: blueviolet;
+    border: solid;
+    border-radius: 15px;
+    padding: 5px;
 }
 #errorPassword,#errorUsername{
-    color: red;
+    color: rgb(99, 88, 88);
     font-size: 13px;
     width: 80%;
+    min-height: 40px;
 }
+a{color: antiquewhite;}
