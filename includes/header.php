@@ -9,9 +9,9 @@
     <script defer src="/index.js"></script>
 </head>
 <body>
-    <nav>
-        <a href="./index.html">Home</a>
-        <a href="./login.html">Log in</a>
-    </nav>
-</body>
-</html>
+   <header>
+       <nav>
+           <a href="./index.php">Home</a>
+           <a href="./login.php">Log in</a>
+        </nav>
+    </header>

@@ -4,6 +4,7 @@ body{
                         "body body body" 
                         "footer footer footer";
     grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(./Images/backgroundBodyImage.jpg) ;
@@ -12,13 +13,18 @@ body{
     margin: 0;
 }
 
+header{
+    width: 100%;
+    grid-area: header;
+}
+
 nav{
     color: rgb(66, 60, 60);
     display: flex;
     align-items: center;
     justify-content: space-between;    
     padding: 15px 2%;
-    grid-area: header; 
+    /* grid-area: header;  */
     background-image: url(./Images/BackgroundNavImage.jpg) ;
     opacity: 0.7;
     
@@ -40,7 +46,7 @@ form{
     height: 300px;
     box-shadow: inset 1px 1px 15px black;
     max-width: 350px;
-    background-image: url(/Images/BackgroundFormImage.jpg);
+    background-image: url('/Images/BackgroundFormImage.jpg');
     background-position: 50% 0%;
 }
    
@@ -99,4 +105,15 @@ input{
 
 #createNewAccountForm {
     height: 370px;
+}
+
+#indexBody{
+    grid-area: body;
+}
+
+footer{
+    grid-area: footer;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: aquamarin;
 }
