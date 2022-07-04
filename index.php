@@ -3,7 +3,7 @@
     include 'includes/header.php';
     ?>
     <div id="indexBody" >
-    wellsadfasdhf
+    sdfasd
     </div>
     <?php
     include 'includes/footer.php';

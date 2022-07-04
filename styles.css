@@ -4,7 +4,7 @@ body{
                         "body body body" 
                         "footer footer footer";
     grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: auto 1fr auto; */
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(./Images/backgroundBodyImage.jpg) ;
@@ -47,19 +47,16 @@ form{
     box-shadow: inset 1px 1px 15px black;
     max-width: 350px;
     background-image: url('/Images/BackgroundFormImage.jpg');
+    background-color: lightgrey;
     background-position: 50% 0%;
 }
    
-#submit{
-    width: 50%;
-    
-    margin-top: 10px ;
-}
+
 input[type="text"]{
     width: 80%;
-   
+    height: 25px;
 }
-.createNewAccount{
+.createNewAccount ,#submit{
     font-weight: 600;
     margin-top: 10px;
     color: rgb(102, 93, 93);
@@ -69,9 +66,14 @@ input[type="text"]{
     font-size: 20px;
     border: solid 3px;
     border-radius: 15px;
+    background-color: #EFEFEF;
 }
-
-.createNewAccount:hover{
+#submit{
+    width: 50%;
+    
+    margin-top: 25px ;
+}
+.createNewAccount:hover ,#submit:hover{
     box-shadow: inset 1px 1px 8px;
     padding: 5px;
 }
@@ -85,11 +87,15 @@ input[type="text"]{
     text-align: center;
 }
 
-a{
+nav a{
     color: rgb(66, 60, 60);
     text-decoration: none;
     font-size: 25px;
     font-weight: 600;
+} 
+
+nav a:hover{
+    text-decoration: underline;
 }
 
 .formTitle{
@@ -109,11 +115,19 @@ input{
 
 #indexBody{
     grid-area: body;
+    /* height:100%; */
+    margin: 100px;
+    /* background-color: black; */
+    justify-self: center;
 }
 
 footer{
     grid-area: footer;
     text-transform: uppercase;
+    font-weight: bold;
     font-size: 20px;
-    color: aquamarin;
+    color: #fff ;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
 }

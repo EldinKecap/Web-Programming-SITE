@@ -1,3 +1,3 @@
 </body>
-<footer>Welcome to our shop</footer>
+<footer>Thank you for visiting our shop</footer>
 </html>
