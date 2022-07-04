@@ -115,10 +115,12 @@ input{
 
 #indexBody{
     grid-area: body;
-    /* height:100%; */
+    padding:120px;
     margin: 100px;
-    /* background-color: black; */
+    background-color: black;
+    color: white;
     justify-self: center;
+
 }
 
 footer{

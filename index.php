@@ -3,7 +3,7 @@
     include 'includes/header.php';
     ?>
     <div id="indexBody" >
-    sdfasd
+    Images of product and hopefully a good hero image
     </div>
     <?php
     include 'includes/footer.php';
