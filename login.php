@@ -10,7 +10,7 @@
         <div id="errorPassword"></div>
         <input type="text" id="password" placeholder="Enter password">
         <input id="submit" type="submit">
-        <a href = "createAccount.php" class = "createNewAccount">Create new account</a>
+        <a href = "createAccount.php" class = "createNewAccount">Create account</a>
     </form>
 
     <?php
