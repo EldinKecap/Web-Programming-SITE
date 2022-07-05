@@ -43,7 +43,7 @@ form{
     width: 50%;
     margin-top: 50px;
     padding: 20px;
-    height: 300px;
+    height: fit-content;
     box-shadow: inset 1px 1px 15px black;
     max-width: 350px;
     background-image: url('/Images/BackgroundFormImage.jpg');
@@ -54,8 +54,20 @@ form{
 
 input[type="text"]{
     width: 80%;
-    height: 25px;
+    height: 35px;
+    font-size: 20px;
+    border: none;
+    border-bottom: solid 2px rgb(99, 88, 88);
+    border-radius: 0%;
+    background-color: #f1ecec00;
 }
+
+::placeholder {
+    color: rgb(54, 54, 54);
+    font-family: monospace;
+    opacity: 1; 
+  }
+
 .createNewAccount ,#submit{
     font-weight: 600;
     margin-top: 10px;
@@ -105,12 +117,13 @@ nav a:hover{
 }
 
 input{
+    
     border-radius: 5px;
     
 }
 
 #createNewAccountForm {
-    height: 370px;
+    height: fit-content;
 }
 
 #indexBody{
@@ -120,7 +133,8 @@ input{
     background-color: black;
     color: white;
     justify-self: center;
-
+    height: 1vh;
+/* malo myb pogledat kako da stickam za dno footer */
 }
 
 footer{

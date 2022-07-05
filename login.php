@@ -1,8 +1,8 @@
     <?php
     include 'includes/header.php';
     ?>
-    
-    <form action="" onclick="getUserInput()" onsubmit="return false">
+    <!-- onsubmit je settovan na funkciju koja ne zaustavlja submit trenutno -->
+    <form action=""  onclick="" onsubmit="getUserInput()">
         <div class = "formTitle">Log in</div>
         <div id="errorUsername"></div>
         <input type="text" id="username" placeholder="Enter username">
