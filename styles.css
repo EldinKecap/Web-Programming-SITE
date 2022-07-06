@@ -8,7 +8,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(./Images/backgroundBodyImage.jpg) ;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: monospace;
     padding: 0;
     margin: 0;
 }
