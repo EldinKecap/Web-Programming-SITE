@@ -2,17 +2,17 @@
     <?php
     include 'includes/header.php';
     ?>
-    <form action="" onclick = "getUserInput()" onsubmit="return false" id="createNewAccountForm">
+    <form action="" method="POST" id="createNewAccountForm">
         <div class = "formTitle">Create new account</div>
 
-        <div id="errorUsername"></div>
         <input type="text" id="username" placeholder="Enter username">  
+        <div id="errorUsername"></div>
 
-        <div id="errorPassword"></div>
         <input type="text" id="password" placeholder="Enter password">
+        <div id="errorPassword"></div>
 
-        <div id="errorEmail"></div>
         <input type="text" id="email" placeholder="Enter email">
+        <div id="errorEmail"></div>
 
         <input id="submit" type="submit">
 

@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
     <link rel="stylesheet" href="./styles.css">
-    <script defer src="index.js"></script>
+    <script defer src="formValidation.js"></script>
 </head>
 <body>
    <header>

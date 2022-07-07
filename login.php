@@ -1,15 +1,17 @@
     <?php
     include 'includes/header.php';
+    
     ?>
     <!-- onsubmit je settovan na funkciju koja ne zaustavlja submit trenutno -->
-    <form action=""  onclick="" onsubmit="getUserInput()">
+    <form action="includes/login-inc.php" method="POST">
         <div class = "formTitle">Log in</div>
-        <div id="errorUsername"></div>
-        <input type="text" id="username" placeholder="Enter username">
         
-        <div id="errorPassword"></div>
-        <input type="text" id="password" placeholder="Enter password">
-        <input id="submit" type="submit">
+        <input type="text" id="username" placeholder="Enter username" name="username">
+        <div id="errorUsername"></div>
+       
+        <input type="text" id="password" placeholder="Enter password" name="password">
+         <div id="errorPassword"></div>
+         <input id="submit" type="submit" name = submit>
         <a href = "createAccount.php" class = "createNewAccount">Create account</a>
     </form>
 

@@ -46,9 +46,9 @@ form{
     height: fit-content;
     box-shadow: inset 1px 1px 15px black;
     max-width: 350px;
-    background-image: url('/Images/BackgroundFormImage.jpg');
     background-color: lightgrey;
-    background-position: 50% 0%;
+    background-image: url('./Images/BackgroundFormImage.jpg');
+    background-position: 80% 10%;
 }
    
 
