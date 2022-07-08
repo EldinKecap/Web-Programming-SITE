@@ -29,7 +29,7 @@
                     exit();
                 }
             }else{
-                header("Location: ../index.php?error=noUserName");
+                header("Location: ../index.php?error=noUserNameInDatabase");
                 exit();
             } 
         }

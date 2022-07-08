@@ -1,5 +1,4 @@
-document.getElementById('submit').addEventListener('click',
-function (e){
+document.getElementById('submit').addEventListener('click',function (e){
     let username = document.getElementById('username');
     let password = document.getElementById('password');
     let errorPassword = document.getElementById('errorPassword');
