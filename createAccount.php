@@ -3,7 +3,7 @@
     include 'includes/header.php';
     ?>
     <form action="" method="POST" id="createNewAccountForm">
-        <div class = "formTitle">Create new account</div>
+        <div class = "formTitle">Create account</div>
 
         <input type="text" id="username" placeholder="Enter username">  
         <div id="errorUsername"></div>
