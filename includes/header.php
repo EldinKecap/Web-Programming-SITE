@@ -10,7 +10,6 @@
     <title>Shop</title>
     <link rel="stylesheet" href="./styles.css">
     <script defer src="formValidation.js"></script>
-    <script defer src="loginOut.js"></script>
 
 </head>
 <body>

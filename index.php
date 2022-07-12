@@ -9,6 +9,7 @@
         $welcomeMsg = '';
     }
         ?>
+    <script defer src="loginOut.js"></script>
     <div id="indexBody" >
     <div id='welcomeMessage'><?=$welcomeMsg?>
     </div>
