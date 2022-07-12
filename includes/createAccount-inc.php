@@ -6,13 +6,14 @@
         $email = $_POST['email'];
         $sql = "SELECT * FROM users WHERE username = ?";
         $stmt = mysqli_stmt_init($conn);
+        
         if (mysqli_stmt_prepare($stmt,$sql)) {
             mysqli_stmt_bind_param($stmt,'s',$username);
             mysqli_stmt_execute($stmt);
             mysqli_stmt_store_result($stmt);
             $rows = mysqli_stmt_num_rows($stmt);
             if($rows > 0){
-                header("Location: ../createAccount.php?error=usernameExists");
+                header("Location: ../createAccount.php?error=usernameExists&username={$username}");
                 exit(); 
         }else{
             $sql = "INSERT INTO users (username,password,email) VALUES (?,?,?)";

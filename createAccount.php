@@ -5,15 +5,17 @@
         $msg = $_GET['error'];
         if($msg == 'usernameExists'){
             $msg = 'This Username is taken.';
+            $username = $_GET['username'];
         }
     }else{
         $msg = '';
+        $username = '';
     }
     ?>
     <form action="includes/createAccount-inc.php" method="POST" id="createNewAccountForm">
         <div class = "formTitle">Create account</div>
 
-        <input type="text" id="username" name = 'usernameCreateAccount' placeholder="Enter username">  
+        <input type="text" id="username" name = 'usernameCreateAccount' placeholder="Enter username" value="<?=$username?>">  
         <div id="errorUsername"><?=$msg?></div>
 
         <input type="text" id="password" name = 'passwordCreateAccount' placeholder="Enter password">

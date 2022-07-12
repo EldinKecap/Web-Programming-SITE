@@ -7,7 +7,7 @@
         $stmt = mysqli_stmt_init($conn);
        
         if(!mysqli_stmt_prepare($stmt,$sql)){
-            header('Location: ../index.php?error=sqlerror');
+            header("Location: ../login.php?error=sqlerror&username={$username}");
             exit();
         }else{
             mysqli_stmt_bind_param($stmt,'s',$username);
@@ -25,18 +25,18 @@
                     header("Location: ../index.php?success=loggedin");
                     exit();
                 }else{
-                    header("Location: ../index.php?error=wrongPassword");
+                    header("Location: ../login.php?error=wrongPassword&username={$username}");
                     exit();
                 }
             }else{
-                header("Location: ../login~.php?error=noUserNameInDatabase");
+                header("Location: ../login.php?error=noUsernameInDatabase&username={$username}");
                 exit();
             } 
         }
     }else{
         header("Location: ../index.php?error=accessforbidden");
         exit();
-        echo 'nije postan submit';
+        // echo 'nije postan submit';
     }
 
 ?>
