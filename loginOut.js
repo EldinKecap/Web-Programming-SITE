@@ -1,4 +1,4 @@
-console.log(window.location.href); 
+// console.log(window.location.href); 
 let loggedin = window.localStorage.getItem('logStatus');
 if (window.location.href === 'http://localhost/PROJEKAT/index.php?success=loggedin') {
      loggedin = true;

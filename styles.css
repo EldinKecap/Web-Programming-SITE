@@ -29,6 +29,19 @@ nav{
     opacity: 0.7;
     
 }
+#home{
+    flex-grow: 15;
+}
+
+#settingsIcon{
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+    margin-left: 20px;
+    opacity: 0.9;
+    /* display: none; */
+}
+
 
 form{
     color: rgb(66, 60, 60);

@@ -10,12 +10,12 @@
     <title>Shop</title>
     <link rel="stylesheet" href="./styles.css">
     <script defer src="formValidation.js"></script>
-
 </head>
 <body>
    <header>
        <nav>
-           <a href="./index.php">Home</a>
+           <a href="./index.php" id = 'home'>Home</a>
            <a href="./login.php" id='loginOut'>Log in</a>
+           <img src="images/Icons8-Ios7-Very-Basic-Settings-Filled.ico" alt="Settings" id='settingsIcon'>
         </nav>
     </header>

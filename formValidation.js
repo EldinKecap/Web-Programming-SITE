@@ -1,5 +1,6 @@
-document.getElementById('submit').addEventListener('click',function (e){
-    let username = document.getElementById('username');
+if (!window.location.href.includes('index')) {   
+    document.getElementById('submit').addEventListener('click',function (e){
+        let username = document.getElementById('username');
     let password = document.getElementById('password');
     let errorPassword = document.getElementById('errorPassword');
     let errorUsername = document.getElementById('errorUsername');
@@ -40,3 +41,4 @@ document.getElementById('submit').addEventListener('click',function (e){
     
 }
 )
+        }
