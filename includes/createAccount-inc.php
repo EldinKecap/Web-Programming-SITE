@@ -13,18 +13,22 @@
             mysqli_stmt_store_result($stmt);
             $rows = mysqli_stmt_num_rows($stmt);
             if($rows > 0){
-                header("Location: ../createAccount.php?error=usernameExists&username={$username}");
+                header("Location: ../createAccount.php?error=usernameExists&username={$username}&email={$email}");
                 exit(); 
         }else{
-            $sql = "INSERT INTO users (username,password,email) VALUES (?,?,?)";
+            $sql = "INSERT INTO users (username,password,email) VALUES (?,?,?) ";
             if(!mysqli_stmt_prepare($stmt,$sql)){
                 header("Location: ../createAccount.php?error=sqlerror");
                 exit();
             }else{
                 mysqli_stmt_bind_param($stmt,"sss",$username,$password,$email);
                 mysqli_stmt_execute($stmt);
-                //session podesit da nakon pravljenja novog racuna bude drugo ime na index.php
-                header("Location: ../index.php?success=CreatedNewAccount");
+                $id = mysqli_insert_id($conn);
+                echo $id;
+                session_start();
+                $_SESSION['sessionId'] = $id ;
+                $_SESSION['sessionUser'] = $username;
+                header("Location: ../index.php?success=loggedin");
                 exit();
             }
            

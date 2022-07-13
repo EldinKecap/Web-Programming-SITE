@@ -6,10 +6,12 @@
         if($msg == 'usernameExists'){
             $msg = 'This Username is taken.';
             $username = $_GET['username'];
+            $email = $_GET['email'];
         }
     }else{
         $msg = '';
         $username = '';
+        $email = '';
     }
     ?>
     <form action="includes/createAccount-inc.php" method="POST" id="createNewAccountForm">
@@ -18,10 +20,10 @@
         <input type="text" id="username" name = 'usernameCreateAccount' placeholder="Enter username" value="<?=$username?>">  
         <div id="errorUsername"><?=$msg?></div>
 
-        <input type="text" id="password" name = 'passwordCreateAccount' placeholder="Enter password">
+        <input type="text" id="password" name = 'passwordCreateAccount' placeholder="Enter password" >
         <div id="errorPassword"></div>
 
-        <input type="text" id="email" name = 'email' placeholder="Enter email">
+        <input type="text" id="email" name = 'email' placeholder="Enter email" value = "<?=$email?>">
         <div id="errorEmail"></div>
 
         <input id="submit" type="submit" name='submitCreateAccount'>
