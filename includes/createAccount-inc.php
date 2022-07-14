@@ -37,6 +37,9 @@
         
         //PROVJERI DA LI MORAS IMENOVAT U DRUGIM FILES TEXT INPUTE UNIQUE IL SE POST RESETUJE SVAKI PUT KAD SE POZOVE
        
+    }else{
+        header("Location: ../index.php?error=forbiddenaccess");
+        exit();
     }
 
 

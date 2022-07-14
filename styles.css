@@ -41,8 +41,44 @@ nav{
     opacity: 0.9;
     /* display: none; */
 }
-
-
+/* #settingsIcon::after{
+    content: 'sdfsdf';
+    display: block;
+    position: absolute;
+    width: 100px;
+} */
+.settingsMenu{
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top:60px;
+    font-size: 20px;
+    width: 200px;
+    right: 0px;
+    height: 0px;
+    background-color: rgb(66, 60, 60);
+    padding: 0px;
+    overflow: hidden;
+    transition: height 0.75s ease-in-out;
+    
+}
+/* treba napravit ovaj transition da radi */
+.settingsMenuOpen{
+    height: 120px ;
+}
+.settingsMenu li{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.settingsMenu :first-child{
+    margin-top: 15px;
+}
+.settingsMenu :last-child{
+    margin-bottom: 10px;
+}
 form{
     color: rgb(66, 60, 60);
     display: flex;

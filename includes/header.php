@@ -16,6 +16,14 @@
        <nav>
            <a href="./index.php" id = 'home'>Home</a>
            <a href="./login.php" id='loginOut'>Log in</a>
-           <img src="images/Icons8-Ios7-Very-Basic-Settings-Filled.ico" alt="Settings" id='settingsIcon'>
+           
+               <img src="images/Icons8-Ios7-Very-Basic-Settings-Filled.ico" alt="Settings" id='settingsIcon'>
+               <div class = "settingsMenu " >
+                   <li>Delete account</li>
+                   <li>Change password</li>
+                   <li>ETC...</li>
+                </div>
+            
+           
         </nav>
     </header>
