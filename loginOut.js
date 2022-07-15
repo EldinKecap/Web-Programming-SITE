@@ -6,10 +6,14 @@ if (window.location.href === 'http://localhost/PROJEKAT/index.php?success=logged
     loggedin = false;
 }
 if (loggedin) {
-    document.getElementById('loginOut').textContent = 'Log out';
-    document.getElementById('loginOut').href = 'includes/logout.php';
+    document.getElementById('logout').innerText = 'Log out';
+    document.getElementById('logout').style.color = 'white';
+    document.getElementById('logout').style.fontSize = '20px';
+    document.getElementById('logout').href = 'includes/logout.php';
+    document.getElementById('login').textContent = '';
+    document.getElementById('login').href = '';
 }else {
-    document.getElementById('loginOut').textContent = 'Log in';
-    document.getElementById('loginOut').href = 'login.php';
+    document.getElementById('login').textContent = 'Log in';
+    document.getElementById('login').href = 'login.php';
 }
 window.localStorage.setItem('logStatus',loggedin);

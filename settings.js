@@ -1,8 +1,8 @@
 let settingsIcon = document.getElementById('settingsIcon');
-let loginText = document.getElementById('loginOut').textContent;
+let loginText = document.getElementById('login').textContent;
 let settingsMenu = document.querySelector('.settingsMenu');
 
-if(!(loginText === 'Log out')){
+if(!(loginText === '')){
     settingsIcon.style.display = "none";
 }else{
     settingsIcon.style.display = "flex";
