@@ -1,0 +1,89 @@
+form{
+    color: rgb(66, 60, 60);
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    grid-area: body;
+    justify-self: center;
+    align-items: center;
+   /* border: solid 1px;*/
+    border-radius: 20px;
+    width: 50%;
+    margin-top: 50px;
+    padding: 20px;
+    height: fit-content;
+    box-shadow: inset 1px 1px 15px black;
+    max-width: 350px;
+    background-color: lightgrey;
+    background-image: url('./Images/BackgroundFormImage.jpg');
+    background-position: 80% 10%;
+}
+   
+
+input[type="text"]{
+    width: 80%;
+    height: 35px;
+    font-size: 20px;
+    border: none;
+    border-bottom: solid 2px rgb(99, 88, 88);
+    border-radius: 0%;
+    background-color: #f1ecec00;
+}
+/* autofill no longer has white background */
+input:-webkit-autofill { 
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+::placeholder {
+    color: rgb(54, 54, 54);
+    font-family: monospace;
+    opacity: 1; 
+  }
+
+  .createNewAccount ,.submit{
+    font-weight: 600;
+    margin-top: 10px;
+    color: rgb(102, 93, 93);
+    text-decoration: none;
+    font-family: monospace;
+    padding: 5px;
+    font-size: 20px;
+    border: solid 3px;
+    border-radius: 15px;
+    background-color: #EFEFEF;
+}
+.submit{
+    width: 50%;
+    
+    margin-top: 25px ;
+}
+.createNewAccount:hover ,.submit:hover{
+    box-shadow: inset 1px 1px 8px;
+    padding: 5px;
+}
+
+#errorPassword,#errorUsername,#errorEmail,#errorOldPassword,#errorNewPassword{
+    color: rgb(99, 88, 88);
+    font-size: 13px;
+    font-weight: 600;
+    width: 80%;
+    min-height: 40px;
+    text-align: center;
+}
+
+#createNewAccountForm {
+    height: fit-content;
+}
+
+.formTitle{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+input{
+    
+    border-radius: 5px;
+    
+}

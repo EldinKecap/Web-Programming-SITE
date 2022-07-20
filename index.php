@@ -9,20 +9,28 @@
         $welcomeMsg = '';
     }
         ?>
-    <script defer src="loginOut.js"></script>
+<!-- OVAJ SCRIP TAG NECE RADIT SAMO NA OVOJ STRANICI ZTO GA PREBACI GDJE JOS ZATREBA -->
+    <script defer src="./javascript/loginOut.js"></script>
+    <script defer src="./javascript/changePassword.js"></script>
     <div id="indexBody" >
     <div id='welcomeMessage'><?=$welcomeMsg?>
     </div>
     Images of product and hopefully a good hero image
     </div>
+
+    <!-- Change Password -->
     <div class="changePassword">
         <form action="includes/changePassword.php" method = "post">
-        <label for="oldPassword">Enter old password</label>    
-        <input type="text" name = "oldPassword">
-        <label for="newPassword">Enter new password</label>
-            <input type="text" id= "newPassword">
-            <input type="submit" class="submit">
-            <span class="material-icons">close</span>
+            <label for="oldPassword">Enter old password</label>    
+                <input type="text" name = "oldPassword" id = "oldPassword">
+                    <div id="errorOldPassword"></div>
+            <label for="newPassword">Enter new password</label>
+                <input type="text" name = "newPassword" id = "newPassword">
+                    <div id="errorNewPassword"></div>
+
+            <input type="submit" class = "submit" id="submitChangedPassword">
+            <div type="close" class = "createNewAccount closeNewPassword" >Close</div>
+            <!-- <span class="material-icons">close</span> -->
         </form>
     </div>
     <?php
