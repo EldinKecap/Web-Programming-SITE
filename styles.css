@@ -29,6 +29,7 @@ nav{
     opacity: 0.7;
     
 }
+
 #home{
     flex-grow: 15;
 }
@@ -41,12 +42,14 @@ nav{
     opacity: 0.9;
     /* display: none; */
 }
+
 /* #settingsIcon::after{
     content: 'sdfsdf';
     display: block;
     position: absolute;
     width: 100px;
 } */
+
 .settingsMenu{
     text-decoration: none;
     list-style-type: none;
@@ -64,20 +67,64 @@ nav{
     transition: height 0.75s ease-in-out;
     
 }
+
 /* treba napravit ovaj transition da radi */
 .settingsMenuOpen{
     height: 120px ;
 }
+
 .settingsMenu li{
     margin-bottom: 10px;
     margin-top: 5px;
     cursor: pointer;
 }
+
+.settingsMenu li:hover{
+    color: #a0c0da ;
+    text-decoration: none;
+}
+
 .settingsMenu :first-child{
     margin-top: 15px;
 }
+
 .settingsMenu :last-child{
     margin-bottom: 10px;
+}
+
+.settingsMenu li a{
+    color: #EFEFEF;
+    font-size: inherit;
+}
+
+.settingsMenu li a:hover{
+    color: #a0c0da !important;
+    text-decoration: none;
+}
+
+.changePassword {
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    width: 500px;
+    transform: translate(20%,25%);
+    opacity: 0;
+    font-size: 25px;
+    transition: opacity 1s;
+}
+.changePassword input{
+    margin: 10px 5px 10px 5px;
+}
+.changePassword input[type='submit']{
+    width: 50%;
+}
+.changePasswordClicked{
+    opacity: 1;
+}
+@media (max-width: 600px){
+.changePassword{
+    width: fit-content;
+}
 }
 form{
     color: rgb(66, 60, 60);

@@ -15,6 +15,15 @@
     </div>
     Images of product and hopefully a good hero image
     </div>
+    <div class="changePassword">
+        <form action="includes/changePassword.php" method = "post">
+        <label for="oldPassword">Enter old password</label>    
+        <input type="text" name = "oldPassword">
+        <label for="newPassword">Enter new password</label>
+            <input type="text" id= "newPassword">
+            <input type="submit">
+        </form>
+    </div>
     <?php
     include 'includes/footer.php';
     ?>
