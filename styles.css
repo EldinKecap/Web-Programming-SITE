@@ -104,6 +104,7 @@ nav{
 
 .changePassword {
     position: absolute;
+    z-index: 1;
     align-self: center;
     justify-self: center;
     width: 500px;
@@ -115,11 +116,10 @@ nav{
 .changePassword input{
     margin: 10px 5px 10px 5px;
 }
-.changePassword input[type='submit']{
-    width: 50%;
-}
+
 .changePasswordClicked{
     opacity: 1;
+    
 }
 @media (max-width: 600px){
 .changePassword{
@@ -169,7 +169,7 @@ input:-webkit-autofill {
     opacity: 1; 
   }
 
-.createNewAccount ,#submit{
+.createNewAccount ,.submit{
     font-weight: 600;
     margin-top: 10px;
     color: rgb(102, 93, 93);
@@ -186,7 +186,7 @@ input:-webkit-autofill {
     
     margin-top: 25px ;
 }
-.createNewAccount:hover ,#submit:hover{
+.createNewAccount:hover ,.submit:hover{
     box-shadow: inset 1px 1px 8px;
     padding: 5px;
 }

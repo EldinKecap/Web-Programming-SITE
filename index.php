@@ -21,7 +21,8 @@
         <input type="text" name = "oldPassword">
         <label for="newPassword">Enter new password</label>
             <input type="text" id= "newPassword">
-            <input type="submit">
+            <input type="submit" class="submit">
+            <span class="material-icons">close</span>
         </form>
     </div>
     <?php
