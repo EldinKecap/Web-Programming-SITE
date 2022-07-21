@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./styles/changePassword.css">
     <link rel="stylesheet" href="./styles/formStyles.css">
     <link rel="stylesheet" href="./styles/settingsStyles.css">
+    <link rel="stylesheet" href="./styles/deleteAccount.css">
+
 
     <script defer src="./javascript/formValidation.js"></script>
 </head>
@@ -29,7 +31,7 @@
            <a href="./login.php" id='login'>Log in</a>
                <img src="./styles/images/Icons8-Ios7-Very-Basic-Settings-Filled.ico" alt="Settings" id='settingsIcon'>
                <div class = "settingsMenu " >
-                   <li>Delete account</li>
+                   <li class="deleteAccountBtn">Delete account</li>
                    <li class="changePasswordButton"> Change password</li>
                   <li><a id="logout" href=""></a></li> 
                 </div>

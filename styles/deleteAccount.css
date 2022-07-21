@@ -1,0 +1,68 @@
+.deleteAccount {
+    color: rgb(66, 60, 60);
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    grid-area: body;
+    justify-self: center;
+    align-items: center;
+   /* border: solid 1px;*/
+    border-radius: 20px;
+    width: 50%;
+    margin-top: 50px;
+    padding: 20px;
+    height: fit-content;
+    box-shadow: inset 1px 1px 15px black;
+    max-width: 350px;
+    background-color: lightgrey;
+    background-image: url('./Images/BackgroundFormImage.jpg');
+    background-position: 80% 10%;
+    position: absolute;
+    z-index: 1;
+    align-self: center;
+    justify-self: center;
+    width: 500px;
+    transform: translate(0%,25%);
+    opacity: 1;
+    font-size: 25px;
+    transition: opacity 1s;   
+}
+
+.deleteAccountClicked{
+    opacity: 1;
+}
+
+@media (max-width: 600px){
+.deleteAccount{
+    width: fit-content;
+}
+}
+
+.deleteAccount .yes ,.deleteAccount .no{
+    font-weight: 600;
+    width: 35px;
+    text-align: center;
+    /* margin-top: 10px; */
+    color: rgb(102, 93, 93);
+    text-decoration: none;
+    font-family: monospace;
+    padding: 5px;
+    font-size: 20px;
+    border: solid 3px;
+    border-radius: 15px;
+    background-color: #EFEFEF;
+}
+
+.deleteAccount .yes:hover ,.deleteAccount .no:hover{
+    box-shadow: inset 1px 1px 8px;
+    padding: 5px;
+}
+
+.answerDeleteAccount{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}

@@ -10,7 +10,8 @@
     }
         ?>
 <!-- OVAJ SCRIP TAG NECE RADIT SAMO NA OVOJ STRANICI ZTO GA PREBACI GDJE JOS ZATREBA -->
-    <script defer src="./javascript/loginOut.js"></script>
+    <script defer src = "./javascript/loginOut.js"></script>
+    <script defer src = "./javascript/deleteAccount.js"></script>
     <script defer src="./javascript/changePassword.js"></script>
     <div id="indexBody" >
     <div id='welcomeMessage'><?=$welcomeMsg?>
@@ -32,6 +33,13 @@
             <div type="close" class = "createNewAccount closeNewPassword" >Close</div>
             <!-- <span class="material-icons">close</span> -->
         </form>
+    </div>
+    <div class = "deleteAccount">
+        <p class = "" >Are you sure?</p>
+            <div class = "answerDeleteAccount">
+                <div class = "yes">Yes</div>
+                <div class = "no" >No</div>
+            </div>
     </div>
     <?php
     include 'includes/footer.php';
