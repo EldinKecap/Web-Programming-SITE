@@ -20,9 +20,13 @@
 <body>
    <header>
        <nav>
-          <div id="home"><a href="./index.php" >Home</a></div> 
+            <div id="home"> 
+                    <a href="./index.php" >Home</a>
+                    <a href="shop.php">Shop</a>
+                    <a href="">Contact</a>
+
+            </div> 
            <a href="./login.php" id='login'>Log in</a>
-           
                <img src="./styles/images/Icons8-Ios7-Very-Basic-Settings-Filled.ico" alt="Settings" id='settingsIcon'>
                <div class = "settingsMenu " >
                    <li>Delete account</li>

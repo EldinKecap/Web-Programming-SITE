@@ -32,6 +32,10 @@ nav{
 
 #home{
     flex-grow: 15;
+    
+}
+#home a {
+    padding-right: 20px;
 }
 
 #settingsIcon{
