@@ -29,7 +29,7 @@
        
         <input type="text" id="password" placeholder="Enter password" name="password">
          <div id="errorPassword"><?=$msgPw?></div>
-         <input class="submit" type="submit" name = "submit">
+         <input class="submit" type="submit" name = "submit" id="submit">
         <a href = "createAccount.php" class = "createNewAccount">Create account</a>
     </form>
 

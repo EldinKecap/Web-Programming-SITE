@@ -39,7 +39,7 @@ submitChangedPassword.addEventListener('click',function(e){
 
 changePwBtn.addEventListener('click',()=>{
     changePasswordDiv.classList.add('changePasswordClicked');
-    
+    deleteAccDiv.classList.remove('deleteAccountClicked');  
 })
 
 clsBtn.addEventListener('click',()=>{

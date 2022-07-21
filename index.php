@@ -35,7 +35,7 @@
         </form>
     </div>
     <div class = "deleteAccount">
-        <p class = "" >Are you sure?</p>
+        <p class = "" >Are you sure? This will delete your account permanently.</p>
             <div class = "answerDeleteAccount">
                 <div class = "yes">Yes</div>
                 <div class = "no" >No</div>

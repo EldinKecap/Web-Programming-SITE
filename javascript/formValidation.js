@@ -1,6 +1,6 @@
 if (window.location.href.includes('login.php')||window.location.href.includes('createAccount.php')) {   
     document.getElementById('submit').addEventListener('click',function (e){
-        let username = document.getElementById('username');
+    let username = document.getElementById('username');
     let password = document.getElementById('password');
     let errorPassword = document.getElementById('errorPassword');
     let errorUsername = document.getElementById('errorUsername');
