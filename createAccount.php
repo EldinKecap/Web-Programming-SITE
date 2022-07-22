@@ -26,7 +26,7 @@
         <input type="text" id="email" name = 'email' placeholder="Enter email" value = "<?=$email?>">
         <div id="errorEmail"></div>
 
-        <input id="submit" type="submit" name='submitCreateAccount'>
+        <input id="submit" class="submit" type="submit" name='submitCreateAccount'>
 
         <a href = "login.php" class = "createNewAccount">Back</a>
     </form>

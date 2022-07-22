@@ -1,15 +1,18 @@
 // console.log(window.location.href); 
 let loggedin = JSON.parse(window.localStorage.getItem('logStatus'));
+
 if (window.location.href === 'http://localhost/PROJEKAT/index.php?success=loggedin') {
      loggedin = true;
      sessId = decodeURIComponent(document.cookie).split('=');
      window.localStorage.setItem('sessId',JSON.stringify(sessId));
-     console.log(sessionStorage);
 }else if(window.location.href === 'http://localhost/PROJEKAT/index.php?loggedout=true'){
     loggedin = false;
 }
+
 sessId = JSON.parse(window.localStorage.getItem('sessId'));
+
 console.log(sessId);
+
 if (sessId[1] === decodeURIComponent(document.cookie).split('=')[1] ) {
     loggedin = true;
 }else{
