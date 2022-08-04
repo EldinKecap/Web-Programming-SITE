@@ -14,7 +14,7 @@
     <script defer src = "./javascript/deleteAccount.js"></script>
     <script defer src="./javascript/changePassword.js"></script>
     <div id="indexBody" >
-    <div id='welcomeMessage'><?=$welcomeMsg?>
+    <div id="welcomeMessage"><?=$welcomeMsg?>
     </div>
     Images of product and hopefully a good hero image
     </div>
