@@ -1,0 +1,29 @@
+#welcomeMessage{
+    text-align: center;
+    color: white;
+    font-size: 27px;
+
+}
+h1 {
+    text-align: center;
+    
+}
+th {
+    border: solid; 
+    width: 10%;
+    font-size: 20px;
+
+}
+
+td{
+    border: solid;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 650px) {
+    th , td {
+        font-size: unset;
+    }
+  }

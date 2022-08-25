@@ -22,8 +22,14 @@
                     session_start();
                     $_SESSION['sessionId'] = $row['id'];
                     $_SESSION['sessionUser'] = $row['username'];
-                    header("Location: ../index.php?success=loggedin");
+                    $_SESSION['sessionAdmin'] = $row['admin'];
+                    if($row['admin'] == 1){
+                        header("Location: ../adminPage.php?success=loggedin");
                     exit();
+                    }else{
+                        header("Location: ../index.php?success=loggedin");
+                        exit();
+                    }
                 }else{
                     header("Location: ../login.php?error=wrongPassword&username={$username}");
                     exit();

@@ -25,7 +25,7 @@
             <div id="home"> 
                     <a href="./index.php" >Home</a>
                     <a href="shop.php">Shop</a>
-                    <a href="">Contact</a>
+                    <a href="./index.php#contact">Contact</a>
 
             </div> 
            <a href="./login.php" id='login'>Log in</a>
