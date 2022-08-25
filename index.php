@@ -13,34 +13,18 @@
     <script defer src = "./javascript/loginOut.js"></script>
     <script defer src = "./javascript/deleteAccount.js"></script>
     <script defer src="./javascript/changePassword.js"></script>
-    <div id="indexBody" >
-    <div id="welcomeMessage"><?=$welcomeMsg?>
-    </div>
-    Images of product and hopefully a good hero image
-    </div>
+    <link rel="stylesheet" href="./styles/index.css">
+<div id="indexBody" >
+    <div class="hero">
+        <div id="welcomeMessage"><?=$welcomeMsg?></div>
+        </div id = "aboutUs">
+        <h3>About US</h3>
+        <p>We are a group of young people set on promoting and teaching extream sports in Bosnia and Herzegovina. Our goal is changing the view of our community torwards these kinds of sports and creating an enviorment where people that like these sports can express their passion. People in our local community have a big stigma about being hurt through these sports which we want to break by teaching kids in a safe enviorment with proper equipment. So far we have organized 8 events where we implemented skate school for begginers that have never even gotten a chance to try these sports out. After every event we aquired new members that have become our friends and are now proper skaters. We will keep on improving our skate school program and our events. We have been featured in various forms of media channels including the slovenian Pendrek skateboarding magazine . Since the inclusion of skateboarding into the olympic games this so called foreing culture has started to develop in our country and we expect exponential growth in the future.</p>
+        </div>
 
-    <!-- Change Password -->
-    <div class="changePassword">
-        <form action="includes/changePassword.php" method = "post">
-            <label for="oldPassword">Enter old password</label>    
-                <input type="text" name = "oldPassword" id = "oldPassword">
-                    <div id="errorOldPassword"></div>
-            <label for="newPassword">Enter new password</label>
-                <input type="text" name = "newPassword" id = "newPassword">
-                    <div id="errorNewPassword"></div>
 
-            <input type="submit" class = "submit" id="submitChangedPassword">
-            <div type="close" class = "createNewAccount closeNewPassword" >Close</div>
-            <!-- <span class="material-icons">close</span> -->
-        </form>
-    </div>
-    <div class = "deleteAccount">
-        <p class = "" >Are you sure? This will delete your account permanently.</p>
-            <div class = "answerDeleteAccount">
-                <div class = "yes">Yes</div>
-                <div class = "no" >No</div>
-            </div>
-    </div>
+    
     <?php
+    include 'includes/modules.php';
     include 'includes/footer.php';
     ?>

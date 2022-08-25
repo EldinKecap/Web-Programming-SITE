@@ -3,7 +3,7 @@ body{
     grid-template-areas: "header header header"
                         "body body body" 
                         "footer footer footer";
-    grid-gap: 10px;
+    grid-gap: 0px;
     /* grid-template-columns: auto 1fr auto; */
     background-size: cover;
     background-repeat: no-repeat;
@@ -57,8 +57,6 @@ nav{
 
 
 
-
-
 nav a{
     color: rgb(66, 60, 60);
     text-decoration: none;
@@ -70,22 +68,26 @@ nav a:hover{
     text-decoration: underline;
 }
 
-
-
-
 #indexBody{
-    
+    padding: 0px;
+    margin: 0px;
     grid-area: body;
+}
+
+.hero{
+ 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center; 
-    padding:120px;
-    margin: 100px;
-    background-color: black;
+    padding:0px;
+    margin: 0px;
+    background: url(Images/skate.jpg) no-repeat ;
+    background-size: cover;
     color: white;
     justify-self: center;
-    height: 1vh;
+    width: 100%;
+    height: 900px;
     
 /* malo myb pogledat kako da stickam za dno footer */
 }
@@ -99,5 +101,7 @@ footer{
     text-align: center;
     position: relative;
     margin-top: 50px;
+    margin-bottom: 25px;
 }
+
 
