@@ -1,0 +1,22 @@
+.addProduct {
+    position: absolute;
+    font-weight: 600;
+    width: 100px;
+    text-align: center;
+    margin: 10px ;
+    color: rgb(102, 93, 93);
+    text-decoration: none;
+    font-family: monospace;
+    padding: 5px;
+    font-size: 20px;
+    border: solid 3px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #EFEFEF;
+    top: 7%;
+} 
+
+.addProduct:hover{
+    box-shadow: inset 1px 1px 8px;
+    padding: 5px;
+}

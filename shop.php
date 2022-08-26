@@ -14,10 +14,17 @@
     <script defer src = "./javascript/deleteAccount.js"></script>
     <script defer src="./javascript/changePassword.js"></script>
     <link rel="stylesheet" href="./styles/adminPage.css">
+    <link rel="stylesheet" href="./styles/shop.css">
     <div id="indexBody" >
     
         <div id="welcomeMessage"><?=$welcomeMsg?></div>
         <h1>Products</h1>
+        <?php
+        if( isset($_SESSION['sessionUser'])){
+            ?><a class="addProduct" href="./addProduct.php">Add a product</a> "<?php
+        }
+        ?>
+        
     <table align="center" id = "productsTable">
         <!-- <tr>
             <th colspan="5"><h1>Accounts</h1></th>
@@ -28,7 +35,7 @@
             <th>Product Name</th>
             <th>Contact</th>
             <th>Description</th>
-            <?php if($_SESSION['sessionAdmin']==1){ ?><th><?php echo 'Delete product'; } ?></th>
+            <?php if(isset($_SESSION['sessionAdmin'])){ if($_SESSION['sessionAdmin']==1){ ?><th><?php echo 'Delete product'; }} ?></th>
 
         </tr>
         <?php
@@ -51,7 +58,7 @@
                     <td class= "productName"><?php echo $rows["productName"];?></td>
                     <td class= "contact"><?php echo $rows["contact"]; ?></td>
                     <td class= "description"><?php echo $rows["description"];?></td>
-                    <?php if($_SESSION['sessionAdmin']==1){ ?><td class="delete"><?php echo 'delete'; } ?></td>
+                    <?php if(isset($_SESSION['sessionAdmin'])){ if($_SESSION['sessionAdmin']==1){ ?><td class="delete"><?php echo 'delete'; }} ?></td>
                 </tr>
                 <?php
             }

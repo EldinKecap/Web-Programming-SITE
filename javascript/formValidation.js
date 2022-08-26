@@ -6,7 +6,7 @@ if (window.location.href.includes('login.php')||window.location.href.includes('c
     let errorUsername = document.getElementById('errorUsername');
     let email = document.getElementById('email');
     let errorEmail = document.getElementById('errorEmail');
-    
+
     //username check
     if (/^[A-Za-z0-9_-]*$/.test(username.value)&&username.value.length >6) {
         console.log(username.value);    

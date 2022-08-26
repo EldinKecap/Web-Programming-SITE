@@ -63,7 +63,7 @@ input:-webkit-autofill {
     padding: 5px;
 }
 
-#errorPassword,#errorUsername,#errorEmail,#errorOldPassword,#errorNewPassword{
+#errorPassword,#errorUsername,#errorEmail,#errorOldPassword,#errorNewPassword,#errorProductName,#errorProductDescription,#errorContactInfo{
     color: rgb(99, 88, 88);
     font-size: 13px;
     font-weight: 600;
