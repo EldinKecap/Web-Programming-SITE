@@ -1,5 +1,6 @@
 <?php
-if(isset($_GET['id'])){
+session_start();
+if(isset($_GET['id'])&&$_SESSION['sessionAdmin']){
     include 'databases.php';
     $sql="UPDATE users SET admin = 1 where id = ?";
     $stmt = mysqli_stmt_init($conn);

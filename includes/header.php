@@ -26,7 +26,7 @@
                     <a href="./index.php" >Home</a>
                     <a href="shop.php">Shop</a>
                     <a href="./index.php#contact">Contact</a>
-
+                    <?php session_start();if(isset($_SESSION['sessionAdmin'])){if($_SESSION['sessionAdmin']){echo '<a href="adminPage.php">Admin</a>';}}?>
             </div> 
            <a href="./login.php" id='login'>Log in</a>
                <img src="./styles/images/Icons8-Ios7-Very-Basic-Settings-Filled.ico" alt="Settings" id='settingsIcon'>

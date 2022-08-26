@@ -1,6 +1,6 @@
 <?php
     include 'includes/header.php';
-    session_start();
+    // session_start();
     if(isset($_SESSION['sessionUser'])){
         $name = ucfirst($_SESSION['sessionUser']);
         $welcomeMsg = "<h1>Welcome {$name}</h1>";
