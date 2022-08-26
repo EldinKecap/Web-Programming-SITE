@@ -22,6 +22,7 @@
         <a href = "shop.php" class = "createNewAccount">Back</a>
     </form>
     <script src="./javascript/addProduct.js" ></script>
+    <script defer src="./javascript/loginOut.js"></script>
     <?php
     include 'includes/footer.php';
     ?>

@@ -32,7 +32,7 @@ if (window.location.href.includes('addProduct.php')) {
         console.log(contactInfo.value);
         errorContactInfo.innerText = '';
     }else{
-        errorContactInfo.innerText = 'Contact Info must be longer than 3 characters, shorter than 50 characters and contain only letters, numbers, underscores and dashes';
+        errorContactInfo.innerText = 'Contact Info must be longer than 3 characters, shorter than 50 255characters and contain only letters, numbers, underscores and dashes';
         console.log('contactInfo cant contain spaces');
         e.preventDefault();
     }

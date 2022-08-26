@@ -1,6 +1,6 @@
 // console.log(window.location.href); 
 let loggedin = JSON.parse(window.localStorage.getItem('logStatus'));
-console.log(document.getElementById("welcomeMessage").innerText != ""); 
+// console.log(document.getElementById("welcomeMessage").innerText != ""); 
 if (window.location.href.includes('success=loggedin') && document.getElementById("welcomeMessage").innerText != "") {
      loggedin = true;
      sessId = decodeURIComponent(document.cookie).split('=');
