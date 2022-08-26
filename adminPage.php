@@ -1,5 +1,6 @@
 <?php
     include 'includes/header.php';
+    include 'includes/modules.php';
     // session_start();
     if(isset($_SESSION['sessionUser'])){
         $name = ucfirst($_SESSION['sessionUser']);
@@ -18,10 +19,11 @@
     <div id="indexBody" >
     
         <div id="welcomeMessage"><?=$welcomeMsg?></div>
-    <table align="center">
-        <tr>
+        <h1>Accounts</h1>
+    <table align="center" id = "accountsTable">
+        <!-- <tr>
             <th colspan="5"><h1>Accounts</h1></th>
-        </tr>
+        </tr> -->
         <tr>
             <th>ID</th>
             <th>Username</th>
@@ -59,9 +61,12 @@
         }
         ?>
         </table>
+        <div class="sort">
+            <h1>Sort results by clicking on the column name</h1>
+        </div>
         <script src="./javascript/adminPage.js"></script>
 <?php
 
-    include 'includes/modules.php';
+    
     include 'includes/footer.php';
     ?>

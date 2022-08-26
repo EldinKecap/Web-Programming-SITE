@@ -31,3 +31,29 @@ td{
 .admin{
     cursor: pointer;
 }
+
+.sort{
+    text-align: center;
+}
+
+/* p{
+    display: inline;
+    margin: 0px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: monospace;
+    padding:0px 15px;
+    font-size: 20px;
+    border: solid 3px;
+    border-radius: 15px;
+    background-color: #EFEFEF;
+}
+
+p:hover {
+    box-shadow: inset 1px 1px 8px;
+    padding: 0px 15px;
+} */
+

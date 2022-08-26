@@ -15,6 +15,7 @@ deleteAccOptionNo.addEventListener('click',()=>{
 
 deleteAccOptionYes.addEventListener('click',()=>{
     console.log(window.location.href);
+    window.location.href = 'http://localhost/PROJEKAT/index.php';
     window.location.href = window.location.href.replace(/index.php(.*)/,'includes/deleteAccount.php');
      console.log(window.location.href);
 })
